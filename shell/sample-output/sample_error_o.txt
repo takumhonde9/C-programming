@@ -1,0 +1,39 @@
+ample output: Errors
+**********************
+
+
+/home/cmpt300student$ cd notehun
+Invalid directory.
+/home/cmpt300student$ cd thoaenu eo oeu oe u   
+Invalid directory.
+/home/cmpt300student$ ntahoeunthao
+ntahoeunthao: Unknown command.
+/home/cmpt300student$ hoet the h ehtoun 
+hoet: Unknown command.
+/home/cmpt300student$ echo Just testing
+Just testing
+/home/cmpt300student$ !!
+echo Just testing
+Just testing
+/home/cmpt300student$ !oops
+SHELL: Unknown history command.
+/home/cmpt300student$ history
+1	cd notehun
+2	cd thoaenu eo oeu oe u
+3	ntahoeunthao
+4	hoet the h ehtoun 
+5	echo Just testing
+6	echo Just testing
+7	history
+/home/cmpt300student$ ^C
+1	cd notehun
+2	cd thoaenu eo oeu oe u
+3	ntahoeunthao
+4	hoet the h ehtoun 
+5	echo Just testing
+6	echo Just testing
+7	history
+/home/cmpt300student$ type dasd
+dasd is external to shell300
+/home/cmpt300student$ exit
+cmpt300student@ubuntu:~/cmpt300/prj2 $ 

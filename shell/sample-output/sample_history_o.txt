@@ -1,0 +1,148 @@
+ample output: History
+**********************
+
+/home/cmpt300student$ ^C
+/home/cmpt300student$ !!
+SHELL: Unknown history command.
+/home/cmpt300student$ !0
+SHELL: Unknown history command.
+/home/cmpt300student$ !1
+SHELL: Unknown history command.
+/home/cmpt300student$ ^C
+/home/cmpt300student$ history
+1	history
+/home/cmpt300student$ ^C
+1	history
+/home/cmpt300student$ !!
+history
+1	history
+2	history
+/home/cmpt300student$ !1
+history
+1	history
+2	history
+3	history
+/home/cmpt300student$ ls
+gmon.out  shell    shell.o    shell_sol.c
+Makefile  shell.c  shell_sol  shell_sol.o
+/home/cmpt300student$ !!
+ls
+gmon.out  shell    shell.o    shell_sol.c
+Makefile  shell.c  shell_sol  shell_sol.o
+/home/cmpt300student$ ^C
+1	history
+2	history
+3	history
+4	ls
+5	ls
+/home/cmpt300student$ ls &
+/home/cmpt300student$ gmon.out  shell    shell.o    shell_sol.c
+Makefile  shell.c  shell_sol  shell_sol.o
+  
+/home/cmpt300student$ 
+/home/cmpt300student$ 
+/home/cmpt300student$ !!
+ls &
+/home/cmpt300student$ gmon.out  shell    shell.o    shell_sol.c
+Makefile  shell.c  shell_sol  shell_sol.o
+
+/home/cmpt300student$ 
+/home/cmpt300student$ 
+/home/cmpt300student$ ^C
+1	history
+2	history
+3	history
+4	ls
+5	ls
+6	ls &
+7	ls &
+/home/cmpt300student$ cat /proc/uptime
+443532.91 1759811.59
+/home/cmpt300student$ !!  
+cat /proc/uptime
+443539.61 1759830.53
+/home/cmpt300student$ ^C
+1	history
+2	history
+3	history
+4	ls
+5	ls
+6	ls &
+7	ls &
+8	cat /proc/uptime
+9	cat /proc/uptime
+/home/cmpt300student$ cat /proc/version
+Linux version 3.13.0-44-generic (buildd@lamiak) (gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) ) #73-Ubuntu SMP Tue Dec 16 00:22:43 UTC 2014
+/home/cmpt300student$ ^C
+1	history
+2	history
+3	history
+4	ls
+5	ls
+6	ls &
+7	ls &
+8	cat /proc/uptime
+9	cat /proc/uptime
+10	cat /proc/version
+/home/cmpt300student$ cat /proc/cmdline
+BOOT_IMAGE=/boot/vmlinuz-3.13.0-44-generic root=UUID=37fc423b-ce79-4f9d-b149-59502584873d ro find_preseed=/preseed.cfg auto noprompt priority=critical locale=en_US quiet
+/home/cmpt300student$ ^C
+2	history
+3	history
+4	ls
+5	ls
+6	ls &
+7	ls &
+8	cat /proc/uptime
+9	cat /proc/uptime
+10	cat /proc/version
+11	cat /proc/cmdline
+/home/cmpt300student$ history
+3	history
+4	ls
+5	ls
+6	ls &
+7	ls &
+8	cat /proc/uptime
+9	cat /proc/uptime
+10	cat /proc/version
+11	cat /proc/cmdline
+12	history
+/home/cmpt300student$ ^C
+3	history
+4	ls
+5	ls
+6	ls &
+7	ls &
+8	cat /proc/uptime
+9	cat /proc/uptime
+10	cat /proc/version
+11	cat /proc/cmdline
+12	history
+/home/cmpt300student$ 
+/home/cmpt300student$ 
+/home/cmpt300student$ pwd
+/home/cmpt300student
+/home/cmpt300student$ cd /proc
+/proc$ pwd
+/proc
+/proc$ ^C
+6	ls &
+7	ls &
+8	cat /proc/uptime
+9	cat /proc/uptime
+10	cat /proc/version
+11	cat /proc/cmdline
+12	history
+13	pwd
+14	cd /proc
+15	pwd
+/proc$ cd /home/cmpt300student
+/home/cmpt300student$ type ls
+ls is external to shell300
+/home/cmpt300student$ type cd
+cd is a shell300 builtin
+/home/cmpt300student$ type pwd
+pwd is a shell300 builtin
+/home/cmpt300student$ type exit
+exit is a shell300 builtin
